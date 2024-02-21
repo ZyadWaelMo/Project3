@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project3</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+                <div class="LogoRightLine">
+                    <a class="navbar-brand ms-3" href="javascript:void(0)"><img src="images/hhh.jpg" alt="LOGO"
+                            width="150" height="35"></a>
+                </div>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <span class="HLine"></span> -->
+                <div class="collapse navbar-collapse ms-3" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fontBlack" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fontBlack" href="javascript:void(0)">Wardrobe</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fontBlack" href="#" role="button"
+                                data-bs-toggle="dropdown">Categories</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fontBlack" href="#">Hoodies</a></li>
+                                <li><a class="dropdown-item fontBlack" href="#">Jeans</a></li>
+                                <li><a class="dropdown-item fontBlack" href="#">Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fontBlack" href="javascript:void(0)">Our Story</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2 searchColor fontBlack me-3" type="text" placeholder="Search">
+                        <button class="btn btn-primary me-3 btnColor btnHover3rd" type="button">Search</button>
+                    </form>
+                    <form class="d-flex">
+
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-primary me-3 btnColor mt-3 mt-lg-0 mt-md-0 btnHover3rd"
+                            data-bs-toggle="modal" data-bs-target="#myModal">
+                            Login
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label ms-3">Email:</label>
+                            <input type="email" class="form-control ms-3" style="width: 400px;" id="email"
+                                placeholder="Enter email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label ms-3">Password:</label>
+                            <input type="password" class="form-control ms-3" style="width: 400px;" id="pwd"
+                                placeholder="Enter password" name="pswd">
+                        </div>
+                        <div class="form-check form-switch ms-3">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Remember me</label>
+                        </div>
+
+                    </form>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btnColor fontWhite me-auto btnHover3rd">Submit</button>
+                        <button type="button" class="btn btnColor fontWhite btnHover3rd"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+
+
+    <main>
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="images/nike.jpg" alt="Los Angeles" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <button class="btn btn-primary me-3 btnColor btnHover3rd" type="button">Order Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/hoodie.jpg" alt="Chicago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <button class="btn btn-primary me-3 btnColor btnHover3rd" type="button">Order Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/jeans.jpg" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <button class="btn btn-primary me-3 btnColor btnHover3rd" type="button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container mt-5 text-center sec3">
+            
+            <h2>Welcome to Unifit</h2>
+            <h3>Your Destination for Unique Fashion</h3>
+            <br>
+            <br>
+            <p style="font-size: 20px;">Our curated collection showcases handpicked pieces that allow you to
+                express your personal style effortlessly. <br> Dive into a world where every
+                outfit tells a story</p>
+            <br>
+            <br>
+            <button class="btn btnColor fontWhite btnHover3rd me-auto ">Discover more</button>
+        </div>
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="mt-4 p-5 text-white rounded text-center btnColor jumbBack">
+            <h1>Discover Your Style</h1>
+
+        </div>
+
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header activeJump " data-bs-toggle="collapse" href="#collapseOne">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                        Trendsetter's Haven
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body ps-5 jumbBody">
+                        Stay ahead of the curve with our latest arrivals. From seasonal must-haves to timeless
+                        essentials,
+                        find the pieces that reflect your unique taste
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header activeJump" data-bs-toggle="collapse" href="#collapseTwo">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        Personalized Picks
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body ps-5 jumbBody">
+                        Tailor your wardrobe to perfection with our personalized recommendations.
+                        Our stylists are here to assist you in finding the perfect outfit for any occasion
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header activeJump" data-bs-toggle="collapse" href="#collapseThree">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                        Exclusive Collections
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body ps-5 jumbBody">
+                        Explore our exclusive collections crafted with care and attention to detail.
+                        Each piece is designed to make a statement and elevate your look to new heights
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="fourthSection mt-5 mb-5 ">
+
+        </div>
+
+
+
+
+
+
+
+        <div class="row container mx-auto d-flex justify-content-center align-items-center">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 shadow p-4 mb-4 bg-white ">
+                <div class="card mx-auto cardBorder " style="width:250px">
+                    <img class="card-img-top" style="height:300px" src="images/h1.jpg" alt="Card image">
+                    <div class="card-body mx-auto">
+                        <h4 class="card-title text-center">Black Hoodie</h4>
+                        <p class="card-text text-center">99 $</p>
+                        <a href="#" class="btn btnColor fontWhite btnHover3rd ms-3">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 shadow p-4 mb-4 bg-white">
+                <div class="card mx-auto cardBorder" style="width:250px">
+                    <img class="card-img-top" style="height:300px" src="images/h2.jpg" alt="Card image">
+                    <div class="card-body mx-auto">
+                        <h4 class="card-title text-center">Grey Hoodie</h4>
+                        <p class="card-text text-center">99 $</p>
+                        <a href="#" class="btn btnColor fontWhite btnHover3rd ms-3">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 shadow p-4 mb-4 bg-white">
+                <div class="card mx-auto cardBorder" style="width:250px">
+                    <img class="card-img-top" style="height:300px" src="images/h3.jpg" alt="Card image">
+                    <div class="card-body mx-auto">
+                        <h4 class="card-title text-center">Green Hoodie</h4>
+                        <p class="card-text text-center">99 $</p>
+                        <a href="#" class="btn btnColor fontWhite btnHover3rd ms-3">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 shadow p-4 mb-4 bg-white">
+                <div class="card mx-auto cardBorder" style="width:250px">
+                    <img class="card-img-top" style="height:300px" src="images/j1.jpg" alt="Card image">
+                    <div class="card-body mx-auto">
+                        <h4 class="card-title text-center">Grey Jeans</h4>
+                        <p class="card-text text-center">119 $</p>
+                        <a href="#" class="btn btnColor fontWhite btnHover3rd ms-3">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 shadow p-4 mb-4 bg-white">
+                <div class="card mx-auto cardBorder" style="width:250px">
+                    <img class="card-img-top" style="height:300px" src="images/j2.jpg" alt="Card image">
+                    <div class="card-body mx-auto">
+                        <h4 class="card-title text-center">Blue Jeans</h4>
+                        <p class="card-text text-center">119 $</p>
+                        <a href="#" class="btn btnColor fontWhite btnHover3rd ms-3">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 shadow p-4 mb-4 bg-white">
+                <div class="card mx-auto cardBorder" style="width:250px">
+                    <img class="card-img-top" style="height:300px" src="images/j3.jpg" alt="Card image">
+                    <div class="card-body mx-auto">
+                        <h4 class="card-title text-center">Black Jeans</h4>
+                        <p class="card-text text-center">119 $</p>
+                        <a href="#" class="btn btnColor fontWhite btnHover3rd ms-3 ">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="sixthSection mt-5 mb-5">
+
+        </div>
+
+
+
+
+
+
+
+        <div class="mt-4 p-5 text-white rounded text-center btnColor seventhBack">
+            <h1>Best Sales</h1>
+
+        </div>
+
+
+
+        <div class="row container mx-auto d-flex justify-content-center align-items-center">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 me-3 shadow p-4 mb-4 bg-white LargeDiv eightsHover">
+
+                <a href="#" class="EightsSection">
+                    <div class="card mx-auto cardBorder2 " style="width:250px">
+                        <h2 class="card-title fontWhite text-center">Grey Fur Jacket</h2>
+                        <div class="iconAndSpan mx-auto fontWhite"><i class="fa-solid fa-coins fontWhite"></i>
+                            <span>1500 Items
+                                Sold</span>
+                        </div>
+                        <img class="roundedImg" style="height:250px" src="images/8of11.jpg" alt="Card image">
+                        <div class="card-body mx-auto">
+                            <h4 class="card-title text-center fontWhite smallSizeFont">Stay cozy and stylish with our
+                                best-selling grey fur jacket</h4>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 me-3 shadow p-4 mb-4 bg-white LargeDiv2 eightsHover">
+
+                <a href="#" class="EightsSection">
+                    <div class="card mx-auto cardBorder2 " style="width:250px">
+                        <h2 class="card-title fontWhite text-center">Orange Air Force</h2>
+                        <div class="iconAndSpan mx-auto fontWhite"><i class="fa-solid fa-coins fontWhite"></i>
+                            <span>3000 Items
+                                Sold</span>
+                        </div>
+                        <img class="roundedImg" style="height:250px" src="images/8of22.jpg" alt="Card image">
+                        <div class="card-body mx-auto">
+                            <h4 class="card-title text-center fontWhite smallSizeFont">Designed for comfort and style
+                            </h4>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-5 shadow p-4 mb-4 bg-white LargeDiv3 eightsHover">
+
+                <a href="#" class="EightsSection">
+                    <div class="card mx-auto cardBorder2 " style="width:250px">
+                        <h2 class="card-title fontWhite text-center">Deep Blue Jeans</h2>
+                        <div class="iconAndSpan mx-auto fontWhite"><i class="fa-solid fa-coins fontWhite"></i> <span>800
+                                Items
+                                Sold</span></div>
+                        <img class="roundedImg" style="height:250px" src="images/8of33.jpg" alt="Card image">
+                        <div class="card-body mx-auto">
+                            <h4 class="card-title text-center fontWhite smallSizeFont">Elevate your denim collection
+                                with our deep blue jeans</h4>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="row"> -->
+
+            <div class="container mt-5 container9">
+                <div class="card shadow bg-white card9" style="width:100%; height: 450px;">
+                    <div class="a7777">
+                        <div class="card9Image card9Image11">
+
+                        </div>
+                    </div>
+                    <div class="limitWords">
+                        <div class="card-body cardBody9th">
+                            <h2 class="mt-4 ms-3 ninthHead">Personal Styling Consultations</h2>
+
+
+
+
+                            <ul class="ms-3 ninthList">
+                                <li>Offer personalized styling consultations where customers can receive expert advice
+                                    on creating their perfect wardrobe</li>
+                                <li>Tailored recommendations based on individual preferences, body type, and lifestyle
+                                </li>
+                                <li>Assistance with outfit coordination for special events or everyday wear</li>
+                            </ul>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-5  ninthBtn">Learn More</a>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-2  ninthBtn">Contact Us</a>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-2  ninthBtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container mt-5 container9">
+                <div class="card shadow bg-white card9" style="width:100%; height: 450px;">
+                    <div class="a77772">
+                        <div class="card9Image2 card9Image22">
+
+                        </div>
+                    </div>
+                    <div class="limitWords2">
+                        <div class="card-body cardBody9th">
+                            <h2 class="mt-4 ms-3 ninthHead">Custom Clothing Design</h2>
+
+
+
+                            <ul class="ms-3 ninthList">
+                                <li>Provide custom clothing design services for customers looking for unique and
+                                    personalized garments</li>
+                                <li>Collaborate with professional designers to bring customers' visions to life
+                                </li>
+                                <li>Options for custom sizing, fabric selection, and detailing to suit each customer's
+                                    preferences</li>
+                            </ul>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-5  ninthBtn">Learn More</a>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-2  ninthBtn">Contact Us</a>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-2  ninthBtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="container mt-5 container9">
+                <div class="card shadow bg-white card9" style="width:100%; height: 450px;">
+                    <div class="a7777">
+                        <div class="card9Image card9Image33">
+                        </div>
+                    </div>
+                    <div class="limitWords">
+                        <div class="card-body cardBody9th">
+                            <h2 class="mt-4 ms-3 ninthHead">Virtual Wardrobe Makeover</h2>
+
+
+
+                            <ul class="ms-3 ninthList">
+                                <li>Offer virtual wardrobe makeover sessions where customers can receive guidance on
+                                    refreshing their existing wardrobe </li>
+                                <li>Assistance with organizing and decluttering closets, identifying key pieces, and
+                                    creating versatile outfit combinations
+                                </li>
+                                <li>Tips on incorporating current trends and maximizing the use of existing clothing
+                                    items</li>
+                            </ul>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-5  ninthBtn">Learn More</a>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-2  ninthBtn">Contact Us</a>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-2  ninthBtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="container mt-5 container9">
+                <div class="card shadow bg-white card9" style="width:100%; height: 450px;">
+                    <div class="a77772">
+                        <div class="card9Image2 card9Image44">
+
+                        </div>
+                    </div>
+                    <div class="limitWords2">
+                        <div class="card-body cardBody9th">
+                            <h2 class="mt-4 ms-3 ninthHead">Fashion Trend Updates</h2>
+
+
+
+
+
+                            <ul class="ms-3 ninthList">
+                                <li>Provide regular updates on the latest fashion trends, including seasonal must-haves
+                                    and style tips</li>
+                                <li>Curated collections featuring trending items and outfit inspiration
+                                </li>
+                                <li>Access to exclusive content such as fashion trend reports, styling guides, and
+                                    lookbooks</li>
+                            </ul>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-5  ninthBtn">Learn More</a>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-2  ninthBtn">Contact Us</a>
+                            <a href="#" class="btn btnColor fontWhite btnHover3rd ms-2  ninthBtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="mt-4 p-5 text-white rounded text-center btnColor lstBack">
+            <h1>Share Your Thoughts</h1>
+
+        </div>
+
+
+        <div class="container mt-4 mb-4 pb-4 text-center darkCont">
+            <label for="comment" class="mt-4 mb-4 ">We value your feedback and would love to hear from you!
+                <br> Use the text area below to share your thoughts, recommendations, or opinions with us<br> Your
+                feedback helps us improve our services and better cater to your needs <br> We appreciate your
+                input!</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+
+
+
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btnColor fontWhite btnHover3rd mt-4" data-bs-toggle="modal"
+                data-bs-target="#myModal1" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Click to Submit Feedback">
+                Submit
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="myModal1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Feedback Sent</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            Thank You!
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btnColor fontWhite btnHover3rd"
+                                data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="footerHead pt-4">
+                <h2 class="fontWhite text-center ">Stay Connected with Us</h2>
+
+                <div class="footerIcons text-center">
+                    <a href="#"><i class="fa-brands fa-facebook me-3" style="font-size: 50px; color: white;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram me-3" style="font-size: 50px; color: white;"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter" style="font-size: 50px; color: white;"></i></a>
+                </div>
+            </div>
+
+
+
+
+            <div class="footerLogo text-center">
+            <a class="navbar-brand ms-3" href="javascript:void(0)"><img src="images/hhh2.jpg" alt="LOGO"
+                width="200" height="45"></a>
+            </div>
+
+
+            
+            <div class="lasttt text-center">
+                <h2 class="fontWhite ">COPYRIGHT © 2024</h2>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+    <script>
+        // Enable tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

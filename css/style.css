@@ -1,0 +1,624 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #e36414;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e36414;
+    border-radius: 10px;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Of Header $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.navbar {
+    background-color: white;
+}
+
+.btnColor {
+    background-color: #e36414 !important;
+    border-color: #e36414 !important;
+}
+
+.searchColor {
+    border-color: #e36414 !important;
+    box-shadow: #e36414 !important;
+
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(227, 100, 20, 0.3) !important;
+}
+
+.fontBlack {
+    color: black !important;
+}
+
+.fontWhite {
+    color: rgb(255, 255, 255) !important;
+}
+
+.HLine {
+    width: 1px;
+    height: 35px;
+    background-color: #e36414;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgb(255, 236, 218);
+}
+
+.LogoRightLine {
+    border-right: #e36414 solid 2px;
+}
+
+/* #myModal{
+    width: 500px;
+} */
+/* .navbar-nav li:hover{
+    transform: scale(1.1);
+} */
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ End Of Header $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Of Main $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.mainDiv {}
+
+.carousel {
+    margin-top: 80px;
+}
+
+.carousel-item {
+    /* height: 500px; */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #e36414 !important;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e36414'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e36414'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+
+
+
+
+
+.btnHover3rd:hover {
+    background-color: #833200 !important;
+
+}
+
+.sec3 {
+
+    background-image: url(../images/section3Back.jpg) !important;
+    background-repeat: no-repeat;
+}
+
+
+.jumbBack {
+    background-image: url(../images/jumptronBack.jpg);
+    background-size: cover;
+}
+
+.activeJump {
+
+    transition-duration: 0.3s;
+}
+
+.activeJump:hover {
+    background-color: #ececec !important;
+    transition-duration: 0.3s;
+}
+
+.jumbBody {
+    background-color: #ececec !important;
+
+}
+
+
+
+
+
+
+
+.fourthSection {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/5thback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+/* .fifthRow {
+    overflow: hidden !important;
+} */
+
+.cardBorder {
+    border: none !important;
+    transition-duration: 0.3s;
+    background-color: transparent !important;
+}
+
+.cardBorder:hover {
+    transform: scale(1.15);
+}
+
+
+
+.sixthSection {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/sssss2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.seventhBack {
+    background-image: url(../images/7thBack.jpg);
+    background-size: cover;
+
+}
+
+.seventhBack h1 {
+    font-size: 50px;
+
+}
+
+
+
+
+
+.EightsSection {
+    text-decoration: none;
+}
+
+.LargeDiv {
+    background-image: url(../images/8th1.jpg);
+    background-size: cover;
+    width: 350px !important;
+    height: 480px;
+}
+
+.LargeDiv:hover {
+    background-image: url(../images/8th1Hover.jpg);
+}
+
+
+.LargeDiv2 {
+    background-image: url(../images/8th2.jpg);
+    background-size: cover;
+    width: 350px !important;
+    height: 480px;
+}
+
+.LargeDiv2:hover {
+    background-image: url(../images/8th2Hover.jpg);
+}
+
+
+
+.LargeDiv3 {
+    background-image: url(../images/8th3.jpg);
+    background-size: cover;
+    width: 350px !important;
+    height: 480px;
+}
+
+.LargeDiv3:hover {
+    background-image: url(../images/8th3Hover.jpg);
+}
+
+.roundedImg {
+    border-radius: 50%;
+
+}
+
+.smallSizeFont {
+    font-size: 20px;
+}
+
+.eightsHover {
+
+    transition-duration: 0.3s;
+
+}
+
+.eightsHover:hover {
+    transform: scale(0.85);
+}
+
+
+.cardBorder2 {
+    border: none !important;
+    transition-duration: 0.3s;
+    background-color: transparent !important;
+}
+
+
+
+
+
+
+.a7777 {
+    position: relative;
+    width: 300px;
+    right: 0;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%);
+    transition-duration: 0.3s;
+}
+
+.card9Image {
+    width: 300px;
+    right: 0;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%);
+    transition-duration: 0.3s;
+
+}
+
+.a77772 {
+    width: 300px;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
+    transition-duration: 0.3s
+}
+
+.card9Image2 {
+    width: 300px;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
+    transition-duration: 0.3s
+}
+
+.ninthList {
+    font-size: 20px;
+}
+
+
+
+.limitWords {
+    width: 50%;
+    position: absolute;
+}
+
+.limitWords2 {
+    width: 50%;
+    position: absolute;
+    margin-left: 300px;
+}
+
+.container9:hover .card9Image {
+    transform: scale(1.2);
+}
+
+.container9:hover .card9Image2 {
+    transform: scale(1.2);
+}
+
+.card9Image11{
+    background-image: url(../images/styleee.jpg);
+}
+.card9Image22{
+    background-image: url(../images/custom.jpg);
+}
+.card9Image33{
+    background-image: url(../images/ward.jpg);
+}
+.card9Image44{
+    background-image: url(../images/trendsss.jpg);
+}
+@media (max-width:992px) {
+    .card9{
+        width: 500px !important;
+    }
+    .a7777 {
+        position: relative;
+        width: 500px !important;
+        height: 200px;
+        clip-path: none !important;
+        transition-duration: 0.3s;
+    }
+    
+    .card9Image {
+        width: 500px !important;
+        right: 0;
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        clip-path: none !important;
+        transition-duration: 0.3s;
+    
+    }
+    
+    .a77772 {
+        position: relative;
+        width: 500px !important;
+        height: 200px;
+        clip-path: none !important;
+        transition-duration: 0.3s;
+    }
+    
+    .card9Image2 {
+        width: 500px !important;
+        right: 0;
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        clip-path: none !important;
+        transition-duration: 0.3s;
+    }
+    .cardBody9th{
+        width: 500px !important;
+        margin-top: 180px;
+    }
+    .ninthList {
+        font-size: 12px !important;
+    }
+    .ninthBtn{
+        margin: 0px !important;
+        width: 80px;
+        height: 25px;
+        font-size: 9px !important;
+    }
+    .ninthList {
+        font-size: 10px;
+    }
+
+    .ninthHead {
+        font-size: 15px;
+    }
+    .limitWords2 {
+        width: 50%;
+        position: absolute;
+        margin-left: 0;
+    }
+    .container9:hover .card9Image {
+        transform: scale(1);
+    }
+    
+    .container9:hover .card9Image2 {
+        transform: scale(1);
+    }
+}
+
+
+
+.spanOrange {
+    height: 10px !important;
+    width: 50px !important;
+    background-color: #e36414 !important;
+    margin-left: 5px;
+}
+
+.spanOrange:hover {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lstBack {
+    background-image: url(../images/lst.jpg);
+}
+
+.darkCont {
+    background-color: #dbdbdb;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/footer.jpg);
+
+}
+
+.footerHead {
+
+    height: 100px;
+}
+
+.footerIcons i {
+    transition-duration: 0.3s;
+}
+
+.footerIcons i:hover {
+    transform: scale(0.8);
+}
+
+.lasttt {
+    margin-top: 30px;
+
+}
+
+.lasttt h2 {
+    font-size: 25px;
+}
+
+.footerLogo {
+    margin-top: 90px;
+    transition: 0.2s;
+}
+@media (max-width:576px) {
+    .card9{
+        width: 350px !important;
+    }
+    .a7777 {
+        position: relative;
+        width: 350px !important;
+        height: 200px;
+        clip-path: none !important;
+        transition-duration: 0.3s;
+    }
+    
+    .card9Image {
+        width: 350px !important;
+        right: 0;
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        clip-path: none !important;
+        transition-duration: 0.3s;
+    
+    }
+    
+    .a77772 {
+        position: relative;
+        width: 350px !important;
+        height: 200px;
+        clip-path: none !important;
+        transition-duration: 0.3s;
+    }
+    
+    .card9Image2 {
+        width: 350px !important;
+        right: 0;
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        clip-path: none !important;
+        transition-duration: 0.3s;
+    }
+    .cardBody9th{
+        width: 350px !important;
+        margin-top: 180px;
+    }
+    .ninthList {
+        font-size: 12px !important;
+    }
+    .ninthBtn{
+        margin: 0px !important;
+        width: 80px;
+        height: 25px;
+        font-size: 9px !important;
+    }
+    .ninthList {
+        font-size: 10px;
+    }
+
+    .ninthHead {
+        font-size: 15px;
+    }
+    .limitWords2 {
+        width: 50%;
+        position: absolute;
+        margin-left: 0;
+    }
+    .container9:hover .card9Image {
+        transform: scale(1);
+    }
+    
+    .container9:hover .card9Image2 {
+        transform: scale(1);
+    }
+    .sec3 {
+
+        background-image: url(../images/section3BackSmall.jpg) !important;
+        background-repeat: no-repeat;
+    }
+    .jumbBack {
+        background-image: url(../images/jumptronBackSmall.jpg);
+        background-size: cover;
+    }
+    .fourthSection {
+        width: 100%;
+        height: 50vh;
+        background-image: url(../images/5thbackSmall.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .sixthSection {
+        width: 100%;
+        height: 50vh;
+        background-image: url(../images/sssss2Small.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    
+    
+    .seventhBack {
+        background-image: url(../images/7thBackSmall.jpg);
+        background-size: cover;
+    
+    }
+
+    .lstBack {
+        background-image: url(../images/lstSmall.jpg);
+    }
+    .footer {
+        height: 300px;
+        width: 100%;
+        background-image: url(../images/footerSmall.jpg);
+    
+    }
+}
+
