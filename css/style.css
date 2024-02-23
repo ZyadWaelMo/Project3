@@ -620,5 +620,8 @@
         background-image: url(../images/footerSmall.jpg);
     
     }
+    .footerIcons a i{
+        font-size: 30px !important;
+    } 
 }
 
