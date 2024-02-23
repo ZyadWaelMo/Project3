@@ -663,7 +663,6 @@
     </footer>
 
     <script>
-        // Enable tooltips
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -674,13 +673,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            // Add event listener to the buttons
             $('.prevent-scroll-top').click(function(event){
-                // Prevent the default behavior of the button click event
                 event.preventDefault();
-                
-                // Add your custom logic or actions here
-                // For example, you can add code to open a modal or perform some other action
             });
         });
     </script>
